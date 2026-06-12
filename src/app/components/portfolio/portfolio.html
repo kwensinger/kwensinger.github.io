@@ -1,0 +1,8 @@
+<section id="portfolio" class="content">
+    <h1>Check out my portfolio!</h1>
+    <div class="cards">
+        <div *ngFor="let card of cards">
+            <a href="#"><img [src]="card.src" [alt]="card.alt"></a>
+        </div>
+    </div>
+</section>

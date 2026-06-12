@@ -1,0 +1,48 @@
+h1, h2, p{
+    margin: 0;
+}
+
+h2{
+    font-weight: normal;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    margin: 0 9.85rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+button{
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media (width <= 1172px) {
+    .content{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .buttons{
+        flex-direction: row;
+        gap: 0;
+    }
+    button img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (width < 1125px) {
+    .content{
+        margin: 0 1.88rem;
+    }
+}

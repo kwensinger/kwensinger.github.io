@@ -1,0 +1,31 @@
+<section id="experience-skills" class="content">
+    <div class="intern-leader-sect subsection">
+        <h1>Internships & Leadership</h1>
+        <div class="roles box-group">
+            <div class="role box {{role.color}}" *ngFor="let role of roles">
+                <h2>{{role.title}}</h2>
+                <p>{{role.subtitle}}</p>
+                <p>{{role.date}}</p>
+                <ul>
+                    <p><li>{{role.li1}}</li></p>
+                    <p><li>{{role.li2}}</li></p>
+                    <p><li>{{role.li3}}</li></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="skills-sect subsection">
+        <h1>Skills</h1>
+        <div class="skills box-group">
+            <div *ngFor="let skill of skills" class="skill box {{skill.color}}" [style.grid-column]="skill.span">
+                <h2>{{skill.title}}</h2>
+                <div class="apps">
+                    <div class="app" *ngFor="let app of skill.apps">
+                        <img [src]="app.src" [alt]="app.name + ' Logo'">
+                        <p>{{app.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 

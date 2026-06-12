@@ -1,0 +1,98 @@
+//GENERAL
+h1, h2, p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 9.85rem;
+    gap: 2.5rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.5rem;
+    border: 8px solid transparent;
+    border-radius: 6rem;
+}
+
+.box-group{
+    gap: 2.5rem;
+}
+
+.warm-border{
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #ff8be6, #ff4444, #ffc145) border-box;
+}
+
+.cool-border{
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #83f3ff, #7650af, #ff8be6) border-box;
+}
+
+.subsection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+//INTERNSHIPS & LEADERSHIP
+.roles{
+    display: flex;
+    flex-direction: column;
+}
+
+//SKILLS
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+.skill{
+    gap: 1.5rem;
+}
+
+.apps{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app img{
+    height: 6.25rem;
+}
+
+@media (width <= 860px) {
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width <= 700px) {
+    .apps{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (width < 1125px) {
+    .content{
+        margin: 0 1.88rem;
+    }
+}
