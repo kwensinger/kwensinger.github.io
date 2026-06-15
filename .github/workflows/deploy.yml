@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/kwensinger.github.io/browser
+          path: dist/portfolio/browser
 
   deploy:
     environment:
