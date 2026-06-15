@@ -27,7 +27,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build -- --base-href "/kwensinger.github.io/"
+      - run: npm run build -- --base-href "/"
 
       - uses: actions/upload-pages-artifact@v3
         with:
