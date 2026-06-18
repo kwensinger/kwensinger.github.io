@@ -12,28 +12,28 @@
         </div>
 
 
-        
-            @if(isMenuOpen){
-                <div class="side-nav" [ngClass]="isMenuOpen ? 'menu-open' : ''">
-                    <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
-                        <img src="/close.svg" alt="Toggle Menu Icon">
-                    </button>
-                    <ul>
-                        <li (click)="toggleMenu()"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-                        <li (click)="toggleMenu()"><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
-                        <li (click)="toggleMenu()"><a routerLink="/experience-skills" routerLinkActive="active">Experience & Skills</a></li>
-                        <li (click)="toggleMenu()"><a routerLink="/about" routerLinkActive="active">About</a></li>
-                        <li (click)="toggleMenu()"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="scrim"></div>
-            } @else {
-                <div class="side-nav" [ngClass]="isMenuOpen ? 'menu-open' : ''">
-                    <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
-                        <img src="/hamburger.svg" alt="Toggle Menu Icon">
-                    </button>
-                    <!-- <h2>Home</h2> -->
-                </div>
-            }
+    
+        @if(isMenuOpen){
+            <div class="side-nav" [ngClass]="isMenuOpen ? 'menu-open' : ''">
+                <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+                    <img src="/close.svg" alt="Toggle Menu Icon">
+                </button>
+                <ul>
+                    <li (click)="toggleMenu()"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+                    <li (click)="toggleMenu()"><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+                    <li (click)="toggleMenu()"><a routerLink="/experience-skills" routerLinkActive="active">Experience & Skills</a></li>
+                    <li (click)="toggleMenu()"><a routerLink="/about" routerLinkActive="active">About</a></li>
+                    <li (click)="toggleMenu()"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="scrim"></div>
+        } @else {
+            <div class="side-nav" [ngClass]="isMenuOpen ? 'menu-open' : ''">
+                <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+                    <img src="/hamburger.svg" alt="Toggle Menu Icon">
+                </button>
+                <!-- <h2>Home</h2> -->
+            </div>
+        }
     </nav>
 </header>
